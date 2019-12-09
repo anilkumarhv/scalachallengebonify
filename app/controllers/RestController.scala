@@ -10,11 +10,11 @@ import play.api.mvc.{AbstractController, AnyContent, ControllerComponents, Reque
 
 class RestController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
 
-  def index = Action { implicit request: Request[AnyContent] =>
+  def index = Action { implicit request: Request[AnyContent] => Ok("Hello")
 //    Ok(generateQuote(scala.util.Random.nextInt(10)))
 // https://github.com/dan-mcm/inspiration-api/blob/master/app/controllers/InspirationController.scala
 // https://auth0.com/blog/build-and-secure-a-scala-play-framework-api/
-// 
+//
   }
 
 //  val connectionUrl = s"jdbc:postgresql://localhost:5432/inspiration_db?user=${sys.env("DB_USER")}&password=${sys.env("DB_PASS")}"
